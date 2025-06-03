@@ -1,0 +1,305 @@
+.spa-container {
+    padding-top: 0.1px; /* Ligero aumento para mayor compatibilidad */
+    margin-top: 0; /* Asegurar que no hay margen superior */
+}
+/*quitar los espacios*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*TEXTOS*/
+.text-menu{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* 400 es Regular */
+    font-size: 16px; /*tamaño-altura*/
+    text-transform: uppercase;
+}
+
+.text-placeholder{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* 400 es Regular */
+    font-size: 16px; /*tamaño-altura*/
+    text-transform: uppercase;
+    color: #9E9A9A;
+}
+
+.text-titulo2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;  /* 600 es SemiBold en Inter */
+    font-size: 32px; /*tamaño-altura*/
+}
+
+.text-normal {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.text-miniatura{
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+/*BOTONES*/
+.button {
+  text-align: center;
+  border-radius: 35px;
+  color: white;
+  background-color: #a3a656;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #384001;
+  cursor: pointer;
+}
+
+
+/*-------------HEADER-------------*/
+header{
+    background-color: #A3A656;
+    display: flex;
+    justify-content: space-between;
+    height:70px; /*altura*/
+    align-items: center; /*centrar verticalmente*/
+}
+
+header ul{
+    list-style: none; /* quitar los puntos */
+    display: flex;     /* pone los items en fila */
+    gap: 30px;         /* espacio entre los items */
+    padding-left: 70px; /*separar 70px desde el borde*/
+}
+
+/*accedo al texto para quitar el subrayado*/
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/*contenedor principal de la derecha*/
+.img-header{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.cuenta{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.idioma{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-right: 10px;
+}
+
+
+/*-------------SECCION SPA TODOS-------------*/
+.spa-container {
+    background-image: url('imagenes/main.png');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.spa-container p {
+    font-family: 'Romanesco', cursive;
+    font-size: 96px;
+    margin-bottom: 20px; /* Espacio antes del siguiente texto */
+}
+
+.spa-container .texto {
+    margin: 150px 150px; /*colocar el texto en su lugar*/
+    text-align: left;
+    line-height: 1.1;
+}
+
+.reserva-container{
+    display: flex;
+    flex-direction: row;
+    height:100px; /*altura*/
+    background-color: #F2F6F6;
+    align-items: center; /*centrar vertical*/
+    justify-content: center; /*centrar horizontal*/
+    gap: 30px;
+}
+
+.reserva-container input{
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    border: 0px;
+    padding: 0 15px;
+}
+
+/*-------------SERVICIOS-CARTAS-------------*/
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    gap: 134px;
+    margin: 0px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    height: auto;
+}
+
+.card-header {
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 15px 0; /* Añade espacio arriba/abajo opcional */
+    color: #ffffff;
+    background-color: #A3A656;
+    border-radius: 15px 15px 0px 0px; /*redondear*/
+}
+
+/*ajustar la imagen*/
+.imagen{
+    height: 250px;
+    object-fit: cover; /* Cubre todo el espacio sin distorsionar la imagen */
+    object-position: center; /* Centra la imagen */
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+.descripcion{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between; /*separar el precio y el botón*/
+    align-items: center;
+}
+
+.reservar{
+    width: 135px;
+    margin-left: auto;
+}
+
+/*-------------SUSCRIPCIONES-------------*/
+
+.suscripciones-container{
+    background-color: #F2F6F6;
+    align-items: center;
+    height: 770px;
+}
+
+.suscripciones-container h2{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.plan-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 180px;
+    align-items: center;
+    align-items: flex-start; /* Alinea en la parte superior */
+}
+
+.plan-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.plan-card ul li{
+    padding: 5px;
+}
+
+.img-plan {
+    display: flex;
+    width: 255px;
+    height: 255px;
+    background-color: white; /* Fondo blanco */
+    border-radius: 50%; /* Borde completamente redondeado (círculo) */
+    border: 11px solid #384001;
+    align-items: center;
+    justify-content: center;
+}
+
+.condiciones {
+  width: 260px;
+  padding: 15px;
+}
+
+footer{
+    height: 97px;
+    background-color: #384001;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer ul{
+    padding-left: 70px;    
+    list-style: none; /* quitar los puntos */
+    display: flex;     /* pone los items en fila */
+    gap: 100px;         /* espacio entre los items */
+    padding-left: 70px; /*separar 70px desde el borde*/
+}
+
+footer a{
+    text-decoration: none;
+    color: #A3A656;
+}
+
+footer p{
+    color: #A3A656;
+    padding-left: 170px;
+    padding-right: 20px;
+}
+
+.red-social{
+    padding: 15px;
+}
+
+.red-social .facebook {
+  height: 35px;
+  object-fit: contain;
+}
+
+.red-social .youtube {
+  height: 37px;
+  object-fit: contain;
+}
+
+/* Para el menú del header */
+header nav a:hover,
+header nav a:focus {  /* :focus para accesibilidad */
+    color: #FFFF00 !important; /* Amarillo */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+/* Para el menú del footer */
+footer a:hover,
+footer a:focus {
+    color: #FFFF00 !important;
+    transition: color 0.3s ease;
+}

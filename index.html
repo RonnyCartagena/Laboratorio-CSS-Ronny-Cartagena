@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <nav>
+        <ul>
+            <li><a href="#" class="text-menu">PROMOCIONES</a></li>
+            <li><a href="#" class="text-menu">FOTOS</a></li>
+            <li><a href="#" class="text-menu">SERVICIOS</a></li>
+            <li><a href="#" class="text-menu">MAPA</a></li>
+            <li><a href="#" class="text-menu">CONTACTO</a></li>
+        </ul>  
+       </nav>
+
+       <div class="img-header">
+            <div class="cuenta">
+                <img src="./imagenes/user.png" alt="cuenta">
+                <p class="text-miniatura">Mi cuenta</p>
+            </div>
+            <div class="idioma">
+                <p class="text-miniatura">ES</p>
+                <img src="./imagenes/flag.png" alt="idioma">
+                <img src="./imagenes/arrow.png" alt="pestaña">
+            </div>    
+       </div>
+    </header>
+
+    <!--Seccion todos-->
+    <div class="spa-container">
+        <div class="texto">
+            <p>SPA - Todos</p>
+            <h2 class="text-titulo2">Regálate un momento de paz y <br> consiente a tu piel en el mejor lugar</h2>
+        </div>
+    </div>
+
+    <!-- Sección reservar cita -->
+    <div class="reserva-container">
+        <div class="input-group1">
+            <label for="cita" class="text-menu">Reserva tu cita:</label>
+            <input type="text" name="cita" id="cita" class="form-input">
+        </div>
+        <div class="input-group2">
+            <label for="codigo" class="text-menu">Código promocional:</label>
+            <input type="text" id="codigo" name="codigo" class="text-placeholder" placeholder="Codigo">
+        </div>
+    </div>
+
+    <!--servicios-cards-->
+    <div class="cards-container">
+        <!--primera card-->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-titulo2">Masaje de pies</h2>
+            </div>
+            <div class="imagen">
+                <img src="./imagenes/pies.png" alt="masaje-de-pies" />
+            </div>
+            <div class="descripcion">
+                <p">Esta es una descripcion de la opción en <br>cuestion....</p>
+            </div>
+            <div class="card-footer">
+                <p class="text-titulo2">$65</p>
+                <div class="button reservar text-miniatura">RESERVAR</div>
+            </div>
+        </div>
+
+        <!--segunda card-->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-titulo2">Masaje relajante</h2>
+            </div>
+            <div class="imagen">
+                <img src="./imagenes/relajante.png" alt="masaje-de-pies" />
+            </div>
+            <div class="descripcion">
+                <p">Esta es una descripcion de la opción en <br>cuestion....</p>
+            </div>
+            <div class="card-footer">
+                <p class="text-titulo2">$65</p>
+                <div class="button reservar text-miniatura">RESERVAR</div>
+            </div>
+        </div>
+
+        <!--tercera card-->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-titulo2">Masaje con bambú</h2>
+            </div>
+            <div class="imagen">
+                <img src="./imagenes/bambu.png" alt="masaje-de-pies" />
+            </div>
+            <div class="descripcion">
+                <p">Esta es una descripcion de la opción en <br>cuestion....</p>
+            </div>
+            <div class="card-footer">
+                <p class="text-titulo2">$65</p>
+                <div class="button reservar text-miniatura">RESERVAR</div>
+            </div>
+        </div>
+    </div>
+
+    <!--suscripciones-->
+    <div class="suscripciones-container">
+        <h2 class="text-titulo2">Haste socio y prueba nuestros beneficios</h2>
+        
+        <!--CARDS-->
+        <div class="plan-cards">
+
+            <!--gold-->
+            <div class="plan-card">
+                <div class="img-plan">
+                    <img src="./imagenes/gold.png" alt="gold">
+                </div>
+                <h2 class="text-titulo2">GOLD</h2>
+                <div class="button condiciones text-normal"> Ver Condiciones</div>
+                <div class="text-miniatura">
+                    <ul>
+                        <li>Gimnasio</li>
+                        <li>Piscina</li>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--premium-->
+            <div class="plan-card">
+                <div class="img-plan">
+                    <img src="./imagenes/premium.png" alt="premium">
+                </div>
+                <h2 class="text-titulo2">PREMIUM</h2>
+                <div class="button condiciones text-normal"> Ver Condiciones</div>
+                <div class="text-miniatura">
+                    <ul>
+                        <li>Gimnasio</li>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--plate-->
+            <div class="plan-card">
+                <div class="img-plan">
+                    <img src="./imagenes/plate.png" alt="plate">
+                </div>
+                <h2 class="text-titulo2">PLATE</h2>
+                <div class="button condiciones text-normal"> Ver Condiciones</div>
+                <div class="text-miniatura">
+                    <ul>
+                        <li>Tratamientos faciales</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!--footer-->
+    <footer>
+        <ul>
+            <li><a href="#" class="text-menu">Politicas de cookies</a></li>
+            <li><a href="#" class="text-menu">Aviso legal</a></li>
+            <li><a href="#" class="text-menu">Proteccion de datos</a></li>
+            <li><a href="#" class="text-menu">Mapa del sitio</a></li>
+        </ul>
+        <p class="text-menu">Siguenos en</p>
+        <div class="facebook red-social">
+          <img src="./imagenes/rs_facebook.png" alt="facebook-logo" />
+        </div>
+        <div class="twitter red-social">
+          <img src="./imagenes/rs_twiter.png" alt="twitter-logo" />
+        </div>
+        <div class="youtube red-social">
+          <img src="./imagenes/rs_youtube.png" alt="youtube-logo" />
+        </div>
+    </footer>
+    
+</body>
+</html>
